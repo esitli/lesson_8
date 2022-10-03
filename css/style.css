@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+[class*="_container"]{
+	max-width: 600px;
+}
+.main{
+	font-family: "Lato";
+	padding: 5%;
+}
+.title_course{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+
+}
+p{
+	line-height: 160%;
+	color: #424551;
+}
+
+.about p{
+	margin-bottom: 48px;
+}
+.title_page{
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+.list{
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 180px;
+}
+ol li:not(:last-child){
+	margin-bottom: 4px;
+}
+li::before{
+	content: "";
+	background: url("../img/icons/Vector0.png") 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 16px;
+}
+
+
+.title_curator{
+	font-weight: 700;
+	line-height: 150%;
+	color: #1E212C;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.title{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+}
+.subtitle_curator{
+	font-size: 20px;
+	line-height: 150%;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+.rate,
+.courses,
+.students{
+	font-weight: 700;
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 4px;
+}
+.students{
+	margin-bottom: 32px;
+}
+.rate::before{
+	content: "";
+	background: url("../img/icons/Star.png") 0 0 no-repeat; 
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 9px;
+}
+.courses::before {
+	content: "";
+	background: url("../img/icons/Vector.png") 0 0 no-repeat;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 9px;
+}
+.students::before {
+	content: "";
+	background: url("../img/icons/Vector2.png") 0 0 no-repeat;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 9px;
+}
+
+.title_homework{
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+
+}
+.try_hover p{
+	border: 5px solid gray;
+	margin-bottom: 5px;
+
+
+}
+.try_hover p:first-child:hover{
+	border: 5px double yellow;
+	background-image: linear-gradient(-45deg, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 41%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+
+}
+.try_hover p:last-child:hover{
+	border: 10px dotted greenyellow;
+	text-transform: uppercase;
+}
+.try_active p{
+	border: 5px solid gray;
+	margin-bottom: 15px;
+}
+.try_active p:nth-child(odd):active{
+	border: 10px dotted salmon;
+	color: darkblue;
+	font-size: 20px;
+}
+.try_active p:nth-child(2):active {
+	border: 15px dashed rgb(192, 88, 40);
+	color: darkblue;
+	background-image: linear-gradient(to bottom, rgba(229, 245, 50, 1) 0%, rgba(232, 244, 16, 0.87) 51%, rgba(229, 239, 93, 0.86) 58%, rgba(227, 238, 27, 0.82) 71%, rgba(226, 229, 42, 0.75) 100%);
+}
+.try_visited a{
+	border: 5px solid gray;
+	margin-bottom: 15px;
+	display: inline-block;
+	padding: 5%;
+}
+.try_visited a:visited{
+	color: cornflowerblue;
+}
+.try_visited a:last-child,
+.try_focus a:last-child {
+	margin-left: 25px;
+}
+.try_focus a{
+	border: 5px solid gray;
+	margin-bottom: 15px;
+	display: inline-block;
+	padding: 5%;
+}
+.try_focus a:first-child:focus{
+	border: 20px ridge yellow;
+
+}
+.try_focus a:last-child:focus {
+	border: 20px groove rgb(54, 153, 211);
+
+}
+.try_target a{
+	color: rgb(80, 74, 74);
+	display: block;
+	margin-bottom: 15px;
+	border: 5px inset gray;
+	max-width: 200px;
+	padding: 5%;
+	text-align: center;
+	background-color: rgb(236, 233, 236);
+}
+.try_target .text_up {
+	background-color: rgb(172, 73, 119);
+	border: 5px dotted rgb(97, 27, 76);
+	padding: 15px;
+	display: none;
+}
+.try_target .text_down {
+	background-color: rgb(194, 173, 173);
+	border: 5px solid rgb(136, 113, 113);
+	padding: 15px;
+	display: none;
+}
+.try_target .text_up:target{
+	display: block;
+}
+
+.try_target .text_down:target {
+	display: block;
+}
